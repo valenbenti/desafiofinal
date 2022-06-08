@@ -1,0 +1,27 @@
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    article{
+        display: flex;
+        justify-content: center;
+    }
+    .logofooter {
+        width: 80px;
+    
+    }
+    @media (min-width: 720px) {
+        header .container{
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        header nav{
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    }
+}

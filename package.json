@@ -1,0 +1,25 @@
+{
+  "build-css": 
+"node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valenbenti/desafiofinal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valenbenti/desafiofinal/issues"
+  },
+  "homepage": "https://github.com/valenbenti/desafiofinal#readme",
+  "dependencies": {
+    "sass": "^1.52.2"
+  }
+}

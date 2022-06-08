@@ -1,0 +1,203 @@
+
+@import"header";
+@import "footer";
+@import "main";
+
+*{
+    box-sizing: border-box
+}
+
+h1{font-size: 2rem;}
+h2{font-size: 1.5rem;}
+h3{font-size: 1rem;}
+p{font-size: 1.25rem;}
+ul{ list-style: none;}
+li{font-size: 1.25rem;}
+
+body{
+    background-color: aqua;
+    font-family: sans-serif;
+    margin: 0
+}
+
+button{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color:black;
+    background-color: aqua;
+    button:hover{
+        background-color: rgb(216, 97, 139);
+    }
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:palevioletred;}
+header{
+    background-color: rgb(30, 27, 27);
+    .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: palevioletred;
+        font-size: 1.6em;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+        a{
+            padding: 5px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            a:hover{
+                color: palevioletred;
+            }
+        }
+    }
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    color: pink;
+    .slogan2
+        {background: linear-gradient(
+        0deg,
+        rgb(57, 56, 56)
+        rgb(40, 38, 38)
+    )
+    ,url("../img/gomitass.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+        h1{
+            color: black;
+            button{
+                font-size: 1.23rem ;
+            }
+        }
+    }
+}
+h1{
+    float:left ;
+    color: rgb(12, 9, 9);
+    position: relative;
+    span{
+        position: absolute;
+        right: 0;
+        width: 0;
+        background-color: white;
+        border-left: 1px solid white;
+        animation: maquina 5s infinite alternate steps(30);
+    }
+    @keyframes maquina{
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0;
+        }
+    }
+}
+
+#imggolo {
+    .container{
+    text-align: center;
+    padding: 200px 12px;
+    }
+}
+
+#acercade-nosotros{
+    background-color: white;
+    color: black;
+    text-align: center;
+    .container{
+        padding: 150px 12px;
+        h2{
+            margin-top: 0;
+        }
+        .carta{
+            background-position: center center ;
+            background-size: cover;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            .carta-first-child{
+                background-image: linear-gradient(
+                    0deg,
+                    rgb(56, 55, 55)
+                    rgba(56, 55, 55)
+                    )
+                    ,url("media/valen-jpeg");
+                    background-position: center center;
+                    background-size: cover;
+            }
+            .carta:nth-child(2){
+                background-image: linear-gradient(
+                    0deg,
+                    rgb(56, 55, 55)
+                    rgba(56, 55, 55)
+                    )
+                    ,url("media/valen-jpeg");
+                    background-position: center center;
+                    background-size: cover;
+                }
+                h3{
+                    margin-top: 0;
+                    font-size: 2em;
+                    }
+                p{
+                    display: none;
+                }
+                .foto{
+                    width: auto;
+                    height: 30px;
+                    background-image:url("");
+            }
+        }
+    }
+}
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    article{
+        display: flex;
+        justify-content: center;
+    }
+    .logofooter {
+        width: 80px;
+    }
+    @media (min-width: 720px) {
+        header .container{
+            flex-direction: row;
+            justify-content: center;
+        }
+        header nav{
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    }
+}

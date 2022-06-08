@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box
 }
@@ -87,12 +88,12 @@ header a:hover{
     flex-direction: column;
     height: 50vh;
     color: pink;
-    background-image: linear-gradient(
+    background: linear-gradient(
         0deg,
         rgb(56, 55, 55)
-        rgba(56, 55, 55,)
+        rgba(56, 55, 55)
     )
-    ,url("./img/gomitass.jpg") ;
+    ,url("../img/") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -132,9 +133,7 @@ h1 span{
     }
 
 }
-#imggolo{
 
-}
 
 #imggolo .container{
     text-align: center;
@@ -179,14 +178,21 @@ h1 span{
 }
 
 .carta-first-child{
-    
+    background-image: linear-gradient(
+        0deg,
+        rgb(56, 55, 55)
+        rgba(56, 55, 55)
+        )
+        ,url("media/valen-jpeg");
+        background-position: center center;
+        background-size: cover;
 }
 
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
         rgb(56, 55, 55)
-        rgba(56, 55, 55,)
+        rgba(56, 55, 55)
         )
         ,url("media/valen-jpeg");
         background-position: center center;
@@ -221,4 +227,5 @@ h1 span{
             padding-bottom: 0;
             padding-right: 20px;
         }
-  }s
+
+    }

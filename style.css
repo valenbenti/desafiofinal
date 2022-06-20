@@ -290,6 +290,7 @@ header-card img{
   flex-flow: wrap;
 }
 
+<<<<<<< HEAD
 .formulario{
   display: flex;
   justify-content: center;
@@ -367,6 +368,8 @@ button:hover{
 
 
 
+=======
+>>>>>>> 0ba142f3d7438bc4fc480441c254887b535a9eec
 
 
 /* inicio footer */

@@ -290,7 +290,15 @@ header-card img{
   flex-flow: wrap;
 }
 
-<<<<<<< HEAD
+@media (max-width:780){
+  .contenedor-cards{
+    flex-direction: column;
+  }
+}
+
+
+
+/* media query cards */
 .formulario{
   display: flex;
   justify-content: center;
@@ -298,8 +306,6 @@ header-card img{
 
 .form{
   justify-content: center;
-  width: 340px;
-  height: 440px;
   background-color: palevioletred;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -311,13 +317,13 @@ header-card img{
   position: relative;
 }
 
-h2{
+/* h2{
   margin: 10px 0;
   padding-bottom:10px ;
   width: 180px;
   color: #383737;
   border-bottom: 3px solid black ;
-}
+} */
 
 input{
   width: 100%;
@@ -344,7 +350,7 @@ p:before{
   color: #383737;
 }
 
-button{
+/* button{
   float: right;
   padding:8px 12px;
   margin: 8px 0 0;
@@ -354,27 +360,18 @@ button{
   color: #0c0909;
   cursor:pointer;.
   transition: all 3s;
-}
+} */
 
 button:hover{
   background: gray;
-  color: #d7d7d7;
+  color:black
 }
 
-
-
-
-
-
-
-
-=======
->>>>>>> 0ba142f3d7438bc4fc480441c254887b535a9eec
 
 
 /* inicio footer */
 footer {
-  background-color: black;
+  background-color: #000;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;

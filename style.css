@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* inicio header */
@@ -17,26 +16,14 @@ header .logo {
 }
 
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding-bottom: 25px;
 }
@@ -109,27 +96,20 @@ button button:hover {
 }
 
 #hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: url(./img/gomitass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 50vh;
   color: pink;
 }
 
 #hero .slogan2 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(#383737, #383737)), url("../img/gomitass.jpg");
-  background: linear-gradient(0deg, #383737 #383737), url("../img/gomitass.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -138,7 +118,7 @@ button button:hover {
 #hero .slogan2 h1 {
   color: black;
 }
-
+/* 
 #hero .slogan2 h1 button {
   font-size: 1.23rem;
 }
@@ -158,7 +138,7 @@ h1 span {
   -webkit-animation: maquina 5s infinite alternate steps(30);
           animation: maquina 5s infinite alternate steps(30);
 }
-
+*/
 @-webkit-keyframes maquina {
   from {
     width: 100%;
@@ -204,19 +184,7 @@ h1 span {
   border-radius: 15px;
 }
 
-#acercade-nosotros .container .carta .carta-first-child {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(#383737, #383737)), url("media/valen-jpeg");
-  background-image: linear-gradient(0deg, #383737 #383737), url("media/valen-jpeg");
-  background-position: center center;
-  background-size: cover;
-}
 
-#acercade-nosotros .container .carta .carta:nth-child(2) {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(#383737, #383737)), url("media/valen-jpeg");
-  background-image: linear-gradient(0deg, #383737 #383737), url("media/valen-jpeg");
-  background-position: center center;
-  background-size: cover;
-}
 
 #acercade-nosotros .container .carta h3 {
   margin-top: 0;
@@ -230,7 +198,6 @@ h1 span {
 #acercade-nosotros .container .carta .foto {
   width: auto;
   height: 30px;
-  background-image: url("");
 }
 
 
@@ -238,6 +205,10 @@ h1 span {
 img{
   max-width: 100%;
 }
+
+
+
+
 
 article.card{
   max-width: 350px;
@@ -290,82 +261,86 @@ header-card img{
   flex-flow: wrap;
 }
 
+/* media query cards */
 @media (max-width:780){
   .contenedor-cards{
     flex-direction: column;
   }
 }
 
+body .contacto{
+  background-image: url(./img/gomitass.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  }
 
-
-/* media query cards */
-.formulario{
-  display: flex;
-  justify-content: center;
+.contenedor .form .form-header .form-title{
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #dc336e;
+  text-align: center;
+  padding: 14px 0;
 }
 
-.form{
-  justify-content: center;
-  background-color: palevioletred;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh -220px) auto;
-  padding: 20px 30px;
-  max-width: calc(100vw -40px);
-  box-sizing:border-box ;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.contenedor .form {
+  background: rgba(174, 126, 126, 0.6);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding:5px 35px ;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius:3px ;
+}
+
+.contenedor .form .form-label{
+  display: block;
+  color: #dc336e;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
 }
 
-/* h2{
-  margin: 10px 0;
-  padding-bottom:10px ;
-  width: 180px;
-  color: #383737;
-  border-bottom: 3px solid black ;
-} */
 
-input{
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
+.contenedor .form .form-input, .form-textarea{
+  background: rgba(0, 0, 0, .7);
+  border: none;
   outline: none;
-  resize: none;
-  border: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: all .3s;
-  border-bottom:2px solid grey;
+  border-bottom: 2px solid #d8618b ;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px ;
+  color: aliceblue;
 }
 
-input:focus{
-  border-bottom:2px solid ;
+.contenedor .form .form-textarea{
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+
 }
 
-p:before{
-  content: attr(type) ;
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #383737;
+.contenedor .form .btn-submit {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline:none ;
+  background: #ad335e;
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
-/* button{
-  float: right;
-  padding:8px 12px;
-  margin: 8px 0 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: 2px solid gray;
-  background: 0;
-  color: #0c0909;
-  cursor:pointer;.
-  transition: all 3s;
-} */
-
-button:hover{
-  background: gray;
-  color:black
+.contenedor .form .btn-submit:hover{
+  background:#c26d8b ;
 }
+
+
+
 
 
 
@@ -373,26 +348,35 @@ button:hover{
 footer {
   background-color: #000;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+}
+
+footer div{
+  display: flex;
+  align-items: center;
+}
+
+
+footer ul{
+  display: flex;
+  gap: 2rem;
 }
 
 footer article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 footer .logofooter {
   width: 80px;
 }
+
+footer a{
+  text-decoration:none;
+  color: rgb(188, 188, 188);
+}
+
 
 @media (min-width: 720px) {
   footer header .container {

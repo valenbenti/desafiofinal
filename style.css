@@ -70,19 +70,6 @@ body {
   margin: 0;
 }
 
-button {
-  font-size: 12px;
-  font-weight: bold;
-  padding: 5px 15px;
-  border-radius: 10px;
-  border: 2px solid black;
-  color: black;
-  background-color: aqua;
-}
-
-button button:hover {
-  background-color: #d8618b;
-} 
 
 .container {
   max-width: 1400px;
@@ -221,7 +208,6 @@ button button:hover {
 }
 .listadesordenada {
   display: flex;
-  -webkit-box-orient: vertical;;
   flex-direction: column;
   text-align: center;
   font-size: 2vh;
